@@ -99,6 +99,17 @@
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
 
+        var inputField = document.createElement("input");
+        inputField.type = "text";
+        inputField.placeholder = "여기에 텍스트를 입력하세요";
+        inputField.style.position = "absolute";
+        inputField.style.top = "50%"; // 수직 중앙
+        inputField.style.left = "50%"; // 수평 중앙
+        inputField.style.transform = "translate(-50%, -50%)";
+        document.body.appendChild(inputField);
+
+        inputField.focus(); // 키보드를 트리거
+
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
